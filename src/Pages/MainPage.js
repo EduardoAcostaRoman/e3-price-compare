@@ -1,7 +1,7 @@
 const MainPage = () => {
   return (
     <section>
-      <h1>E3 Price-Compare</h1>
+      <h1>Compare Prices!</h1>
     </section>
   );
 };
