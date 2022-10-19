@@ -4,14 +4,6 @@
   --header-third-color: #5fdcf4;
 }
 
-@media (min-width: 600px) {
-  .header {
-    flex-direction: row;
-    padding: 0 30px;
-    justify-content: space-between;
-  }
-}
-
 nav {
   margin-top: 0.7rem;
   margin-bottom: 0.7rem;
@@ -90,4 +82,16 @@ li a:active {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   background: var(--header-second-color);
+}
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    padding-bottom: 1rem;
+    justify-content: space-around;
+  }
+
+  nav {
+    padding-top: 0.9rem;
+  }
 }
