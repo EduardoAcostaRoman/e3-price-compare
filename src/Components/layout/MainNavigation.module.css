@@ -59,19 +59,17 @@ li :any-link {
   text-decoration: none;
   margin-right: 1rem;
   padding: 0 0.4rem;
+  transition: all ease 0.3s;
 }
 
-/* unvisited link */
 li a:link {
   color: white;
 }
 
-/* visited link */
 li a:visited {
   color: white;
 }
 
-/* mouse over link */
 li a:hover {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
@@ -81,7 +79,7 @@ li a:hover {
 li a:active {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  background: var(--header-second-color);
+  background: var(--header-third-color);
 }
 
 @media (min-width: 600px) {
@@ -93,5 +91,9 @@ li a:active {
 
   nav {
     padding-top: 0.9rem;
+  }
+
+  li :any-link {
+    padding: 0.7rem 1.4rem;
   }
 }
