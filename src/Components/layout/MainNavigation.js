@@ -5,7 +5,12 @@ import classes from './MainNavigation.module.css';
 const MainNavigation = () => {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>E3 Price-Compare</div>
+      <Link to='#' className={classes.logo}>
+        <img src='images/shopping cart 2.png' alt='logo' />
+        <div>
+          <span className={classes.e3logo}>E3</span> Price Compare
+        </div>
+      </Link>
       <nav>
         <ul>
           <li>

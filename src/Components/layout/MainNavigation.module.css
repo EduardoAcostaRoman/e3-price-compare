@@ -1,61 +1,93 @@
-.header {
-  margin: 0 auto;
-  width: 90%;
-  max-width: 40rem;
-  height: 5rem;
+:root {
+  --header-color: #101d46;
+  --header-second-color: #2958c6;
+  --header-third-color: #5fdcf4;
+}
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: row;
+    padding: 0 30px;
+    justify-content: space-between;
+  }
+}
+
+nav {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.header ul {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  background-color: #77002e;
-  padding: 0 10%;
+}
 
+.header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--header-color);
+  padding: 0 10%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.e3logo {
   border-radius: 6px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 0 0.4rem;
 
-  background: rgb(173, 1, 68);
-  background: linear-gradient(
-    0deg,
-    rgba(173, 1, 68, 1) 0%,
-    rgba(119, 0, 46, 1) 100%
-  );
+  background: var(--header-second-color);
 }
 
 .logo {
+  margin-top: 0.7rem;
   font-size: 2rem;
   color: white;
   font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  margin-right: 1rem;
 }
 
 .header ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 li :any-link {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-decoration: none;
+  margin-right: 1rem;
+  padding: 0 0.4rem;
 }
 
 /* unvisited link */
-a:link {
+li a:link {
   color: white;
 }
 
 /* visited link */
-a:visited {
+li a:visited {
   color: white;
 }
 
 /* mouse over link */
-a:hover {
-  color: hotpink;
+li a:hover {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: var(--header-second-color);
 }
 
-/* selected link */
-a:active {
-  color: blue;
+li a:active {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  background: var(--header-second-color);
 }
